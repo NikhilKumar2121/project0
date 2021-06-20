@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+}
+
+:root {
+    --font_color_small: #1b1111;
+    --google_color_blue: #4285F4;
+    --google_color_red: #EA4335;
+    --google_color_orange: #FBBC05;
+    --google_color_green: #34A853;
+    --search_border_color: #dfe1e5;
+    --b_g_color: #f7f9fa;
+    --a_s_color: #D93025;
+    --hr_color: rgba(223, 213, 213, 0.459);
+    --search_bar_color: #fff;
+    --border_color: rgba(223,225,229,0);
+    --null_color: rgb(0 0 0 / 10% );
+    --shadow_color: rgb(32 33 36 / 28%);
+    --extra_blue_color: #478AF8;
+}
+/* full-Page */
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* navbar for Advanced_search*/
+#google_s {
+display: flex;
+align-items: center;
+margin: 0px 10px;
+
+
+}
+#li{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#li1 {
+    margin: 10px 50px 0px 100px;
+    display: flex;
+    list-style: none;
+}
+#li1 :nth-child(2) {
+    padding-left: 20px;
+}
+.li a{
+    color: var(--font_color_small);
+    text-decoration: none;
+    font-size: 0.8em;
+}
+.li a:hover, .li a:hover{
+    text-decoration: underline;
+}
+/* =========================Navbar for Advanced_search================================ */
+/* Navbar */
+#link ul {
+    margin: 10px 50px 0px 100px;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+#link ul :nth-child(2) {
+    padding-left: 20px;
+}
+
+#link ul li{
+    padding: 5px 0px 0px 5px;
+}
+
+#link ul li a{
+    color: var(--font_color_small);
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+#link ul li a:hover, #link ul li a:hover{
+    text-decoration: underline;
+}
+/* =============================navbar========================================== */
+
+                           /* google style */
+
+
+#google {
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    align-items: baseline;
+    margin: 70px 0px 30px 0px;
+}
+/* colours */
+.b_c {
+    color: var(--google_color_blue);
+}
+
+.r_c {
+    color: var(--google_color_red);
+}
+
+.o_c {
+    color: var(--google_color_orange);
+}
+
+.g_c {
+    color: var(--google_color_green);
+}
+
+/* ===============================goolge style======================================= */
+
+                                /* Search bar */
+.search_bar{
+    display: block;
+    width: 584px;
+    height: 44px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid var(--search_border_color);
+    box-shadow: none;
+    padding-left: 20px;
+}
+.search_bar:hover{
+    box-shadow: 0px 1px 6px var(--shadow_color);
+    background-color: var(--search_bar_color);
+    border-color: var(--border_color);
+}
+input{
+    font-size: 1em;
+}
+
+/* buttons */
+.searchbtn {
+    padding: 0px 15px;
+    margin: 10px 5px;
+    background-color: var(--b_g_color);
+    border: none;
+    border-radius: 5px;
+    color: var(--font_color_small);
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 36px;
+    line-height: 25px;
+    min-width: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.searchbtn:hover {
+    box-shadow: 0px 1px 6px var(--null_color);
+    border-color: var(--border_color);
+    border: 1px solid var(--search_border_color);
+    background-color: var(--b_g_color);
+}
+
+                                    /* Advanced_search */
+h3 {
+    padding: 30px 0px 25px 50px;
+    font-weight: 100;
+    color: var(--a_s_color);
+}
+
+hr {
+   height: 1px;
+    background-color: var(--hr_color);
+    border: none;
+    /* font-size: 4rem; */
+}
+
+#table_data {
+    padding: 45px 0px 0px 50px;
+    font-weight: lighter;
+}
+
+#table_data thead tr td {
+    padding-bottom: 20px;
+}
+
+#table_data tbody tr td {
+    padding-bottom: 10px;
+    font-size: 0.8em;
+}
+
+.search_area {
+    height: 15px;
+    width: 400px;
+    padding: 5px;
+    box-shadow: none;
+    outline: none;
+    
+}
+
+.search_area :focus {
+    box-shadow: 0px -1px 6px px var(--b_g_color);
+    border: 1px solid var(--extra_blue_color);
+}
+
+#search_btn {
+    float: right;
+    height: 34px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: var(--b_g_color);
+    border: none;
+    border-radius: 2px;
+    background-color: var(--extra_blue_color);
+    padding: 0px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#search_btn :hover {
+    border: #34A853;    
+}
